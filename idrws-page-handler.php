@@ -21,37 +21,4 @@ Version: 1.0
 	
 		return $iframe;
 	}
-
-	function idrws_upload_as_page($filename){
-		$dir = IDRWS_PLUGIN_DIR."output/".$filename."/".$filename;
-		$post  = array();
-		$pages = scandir($dir);
-		
-
-		// Can and SHOULD be optimized
-		foreach($pages as $page){
-			if(preg_match("/.html$/", $page)){
-				echo $page;
-				$post[]=$page;
-			}
-		}
-		foreach($post as $page){
-			idrws_add_page($dir."/".$page, $filename);
-		}
-	}
-
-	function idrws_add_page($page, $filename){
-		$html = file_get_contents($page);
-		$slug = preg_replace("/[ ]/", "_", $filename);
-		$post = array(
-			'post_content' 	=> $html,
-			'post_name' 	=> $slug,
-			'post_title'	=> $filename
-			);
-		$id = wp_insert_post($post, true);
-
-		if(is_wp_error($id)){
-			echo $id->get_error_message();
-		}
-	}
 ?>
