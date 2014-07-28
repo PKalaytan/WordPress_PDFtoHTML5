@@ -1,0 +1,98 @@
+/*
+Author: Simon Lissack
+Company: IDR Solutions
+Version: 1.0
+*/
+
+#idrws-left{
+    float:left;
+    width:44%;
+    height:100%;
+    border-radius: 4px;
+}
+
+#idrws-right{
+    float:right;
+    width:55%;
+    height:100%;
+}
+
+#idrws-files-container{
+    height:25%;
+}
+
+#idrws-options-menu{
+    width:100%;
+}
+
+#idrws-account-container{
+    width:100%;
+}
+
+.idrws-option-header{
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1)));
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+    background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+    background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+
+    border-radius: 4px;
+    border:1px solid #aaaaaa;
+    padding:4px !important;
+
+}
+
+#idrws-conversion{
+    height:60%;
+}
+
+#idrws-upload{
+    display:inline-block;
+    width:49%;
+}
+
+#idrws_available_pdfs {
+    width:49%;
+    height:100%;
+    display:inline-block;
+}
+#idrws_selected_pdf{
+    visibility:hidden;
+    width:10px;
+}
+.idrws-banner-inactive {
+    visibility: hidden;
+}
+
+#idrws-preview {
+    width:100%;
+    height:65.7%;
+}
+
+#idrws_selected_shortcode{
+	height:20px;
+	text-align: center;
+}
+
+.idrws_pdf_short {
+    width:100%;
+    height:800px;
+    margin: 0 auto;
+}
+
+#idrws-file-list{
+    vertical-align:top;
+	display: inline-block;
+    width:100%;
+    height:100%;
+}
+
+#idrws-preview-window{
+    vertical-align:top;
+    width:100%;
+    height:100%;
+}
+
